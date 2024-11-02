@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KerékBár | Kerékpár bérlés</title>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-contact">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>9999 Kisfalu, Lejtő utca 11.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>Defekt Dénes: +36 10 987 6543</p>
+            </div>
+        </div>
+        <div class="header-menu">
+            <!-- Logo -->
+            <a href="#fooldal"><i class="bi bi-bicycle"></i></a>
+            <!-- Nav -->
+            <nav>
+                <!-- Hamburger menu -->
+                <input type="checkbox" name="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox">
+                    <span class="nav-checkbox__button">
+                        <span class="nav-checkbox__line"></span>
+                        <span class="nav-checkbox__line"></span>
+                        <span class="nav-checkbox__line"></span>
+                    </span>
+                </label>
+
+                <ul class="nav-links">
+                    <li><a href="#fooldal"  class="nav-link">Főoldal</a></li>
+                    <li><a href="#kolcsonzes"  class="nav-link">Kölcsönzés</a></li>
+                    <li><a href="#kerekparok"  class="nav-link">Kerékpárok</a></li>
+                    <li><a href="#kapcsolat"  class="nav-link">Kapcsolat</a></li>
+                    <li><a href="#taj"  class="nav-link">A táj</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Főoldal -->
+        <section id="fooldal" class="fooldal">
+            <div>
+                <h1>KerékBár</h1>
+                <p>Bérelj elektromos vagy hagyományos kerékpárt és fedezd fel a tájat kényelmesen!</p>
+                <a href="#kapcsolat" class="btn">Bicikli bérlés</a>
+            </div>
+            <img src="./assets/img/bicycle.jpg" alt="bicycle">
+        </section>
+        <!-- Kölcsönzés -->
+        <section id="kolcsonzes" class="kolcsonzes">
+            <h2>KÖLCSÖNZÉS</h2>
+            <h3>A kerékpár bérlés díja:</h3>
+            <p>
+                1 elektromos kerékpár bérleti díja 1 napra 15.000 Ft, 2 vagy több napra 25.000 Ft.
+                1 hagyományos kerékpár bérleti díja 1 napra 10.000 Ft, 2 vagy több napra 18.000 Ft.
+                Fizetni lehet készpénzzel vagy bankkártyával a helyszínen.
+            </p>
+            <p>Kaució fizetendő a kerékpárok átvételekor:</p>
+                <ul>
+                    <li>Elektromos kerékpárok esetén 50.000 Ft kerékpáronként</li>
+                    <li>Hagyományos kerékpárok esetén 30.000 Ft kerékpáronként</li>
+                </ul>
+            <p>Ha a kerékpárok sértetlen állapotban kerülnek leadásra, a bérlő visszakapja a kauciót.</p>
+            <h3>Kölcsönzési feltételek</h3>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <h4> Előzetes egyeztetés</h4>
+                <p>Előzetesen egyeztessen velünk telefonon a +36 10 987 6543 telefonszámon!</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-clock"></i>
+                <h4>Átvételi és leadási idő</h4>
+                <p>A kerékpárokat a bérlés napján reggel 8 és 9 óra között lehet átvenni, a leadás napján 18 és 19 óra között lehet leadni.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-exclamation"></i>
+                <h4>Felelősségvállalás</h4>
+                <p>A bérlő a kerékpárokat saját felelősségére, a KRESZ-nek és elektromos kerékpárok esetén az elektromos kerékpárokra vonatkozó jogszabályoknak megfelelően használja.</p>
+            </div>
+        </section>
+        <!-- Kerékpárok -->
+        <section id="kerekparok" class="kerekparok">
+            <h2>KERÉKPÁROK</h2>
+            <div>
+                <h3>Elektromos kerékpárok</h3>
+                <ul>
+                    <li>Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
+                    <li>Erős, 250 W-os motor, végsebessége 30km/h</li>
+                    <li>Könnyen kezelhető LCD kijelző</li>
+                    <li>Defekttűrő, vastag gumiabroncs</li>
+                    <li>7 fokozatú Shimano váltó</li>
+                    <li>Teleszkópok</li>
+                    <li>Hidraulikus tárcsafék</li>
+                    <li>Kényelmes, puha ülés</li>
+                    <li>Csomagtartó</li>
+                    <li>Alacsony, könnyen átléphető, erős váz</li>
+                </ul>
+            </div>
+            <h4>Ha még nem ültél elektromos kerékpáron, akkor itt az ideje, hogy kipróbáld!</h4>
+            <p>Miért érdemes kipróbálni az elektromos kerékpárt?</p>
+            <p>Az elektromos kerékpár előnyei:</p>
+            <ul>
+                <li>Az elektromos rásegítés megkönnyíti a meredek emelkedők megmászását.
+                    Fontos hangsúlyozni, hogy az e-kerékpár nem megy magától, pedálozással hajtani kell és a motor csak segíti a pedálozást.
+                </li>
+                <li>Hosszabb távolságok megtételét teszi lehetővé nagyobb sebességgel, gyorsabban.</li>
+                <li>Kevesebb erőfeszítést igényel, ezáltal élvezetesebb, kényelmesebb lesz a kerékpározás.</li>
+                <li>A kevésbé fitt vagy idősebb emberek is bátran elindulhatnak vele egy hosszabb biciklitúrára.</li>
+            </ul>
+            <div>
+                <h3>Hagyományos kerékpárok</h3>
+                <ul>
+                    <li>7 fokozatú Shimano váltó</li>
+                    <li>Teleszkópok</li>
+                    <li>Hidraulikus tárcsafék</li>
+                    <li>Defekttűrő gumiabroncs</li>
+                    <li>Kényelmes, puha ülés</li>
+                    <li>Csomagtartó</li>
+                    <li>Alacsony, könnyen átléphető, erős váz</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-plus"></i>
+                <p>Minden kerékpárhoz biztosítunk bukósisakot, láthatósági mellényt és lakatot.</p>
+            </div>
+        </section>
+        <!-- Kapcsolat -->
+         <section id="kapcsolat" class="kapcsolat">
+            <h2>Lépj velünk kapcsolatba!</h2>
+            <!-- Űrlap -->
+             <form action="https://formspree.io/f/mrbgpaze" method="post">
+                <div class="form-elem">
+                    <label for="nev" class="form-label">Név: </label>
+                    <input type="text" name="nev" id="nev" class="form-input" required >
+                </div>
+                <div class="form-elem">
+                    <label for="tel" class="form-label">Telefonszám: </label>
+                    <input type="tel" name="tel" id="tel" class="form-input" required>
+                </div>
+                <div class="form-elem">
+                    <label for="email" class="form-label">Email cím: </label>
+                    <input type="email" name="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-elem">
+                    <label for="uzenet" class="form-label  textarea-label">Üzenet: </label>
+                    <textarea name="uzenet" id="uzenet" class="form-input form-textarea" required></textarea>
+                </div>
+                <input type="submit" value="Küldés" class="btn">
+             </form>
+             <div class="main-contact">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>9999 Kisfalu, Lejtő utca 11.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Defekt Dénes: +36 10 987 6543</p>
+                </div>
+            </div>
+         </section>
+         <!-- A táj -->
+          <section id="taj" class="taj">
+            <h2>A táj</h2>
+            <h3>Fedezd fel ezt a varázslatos tájat két keréken!</h3>
+            <p>Változatos, kitáblázott kerékpárutak várnak!</p>
+          </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">Copyright <span>&copy;</span> 2024 Fejér Tímea</p>
+        <a href=""><i class="fa-solid fa-circle-up"></i></a>
+    </footer>
+</body>
+</html>
