@@ -27,18 +27,18 @@
     <!-- Header -->
     <header>
         <div class="header-contact">
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="contact">
+                <i class="fa-solid fa-location-dot icon"></i>
                 <p>9999 Kisfalu, Lejtő utca 11.</p>
             </div>
-            <div>
-                <i class="fa-solid fa-phone"></i>
+            <div class="contact">
+                <i class="fa-solid fa-phone icon"></i>
                 <p>Defekt Dénes: +36 10 987 6543</p>
             </div>
         </div>
         <div class="header-menu">
             <!-- Logo -->
-            <a href="#fooldal"><i class="bi bi-bicycle"></i></a>
+            <a href="#fooldal" class="logo"><i class="bi bi-bicycle"></i></a>
             <!-- Nav -->
             <nav>
                 <!-- Hamburger menu -->
@@ -77,31 +77,35 @@
         <section id="kolcsonzes" class="kolcsonzes">
             <h2>KÖLCSÖNZÉS</h2>
             <h3>A kerékpár bérlés díja:</h3>
-            <p>
-                1 elektromos kerékpár bérleti díja 1 napra 15.000 Ft, 2 vagy több napra 25.000 Ft.
-                1 hagyományos kerékpár bérleti díja 1 napra 10.000 Ft, 2 vagy több napra 18.000 Ft.
-                Fizetni lehet készpénzzel vagy bankkártyával a helyszínen.
+            <div class="text-box">
+                <p><strong>1 elektromos kerékpár</strong> bérleti díja <strong>1 napra 15.000 Ft</strong>, 2 napra 25.000 Ft. </p>
+                <p><strong>1 hagyományos kerékpár</strong> bérleti díja <strong>1 napra 10.000 Ft</strong>, 2 napra 18.000 Ft.</p>
+            </div>
+            <p class="text-box">Fizetni lehet <strong>készpénzzel vagy bankkártyával</strong> a helyszínen.</p>
+            <p class="text-box"><strong>Kaució fizetendő</strong> a kerékpárok átvételekor:
+                Elektromos kerékpárok esetén 50.000 Ft kerékpáronként, hagyományos kerékpárok esetén 30.000 Ft kerékpáronként.
             </p>
-            <p>Kaució fizetendő a kerékpárok átvételekor:</p>
-                <ul>
-                    <li>Elektromos kerékpárok esetén 50.000 Ft kerékpáronként</li>
-                    <li>Hagyományos kerékpárok esetén 30.000 Ft kerékpáronként</li>
-                </ul>
             <p>Ha a kerékpárok sértetlen állapotban kerülnek leadásra, a bérlő visszakapja a kauciót.</p>
             <h3>Kölcsönzési feltételek</h3>
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <h4> Előzetes egyeztetés</h4>
+            <div class="text-box">
+                <div class="condition">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <h4> Előzetes egyeztetés</h4>
+                </div>
                 <p>Előzetesen egyeztessen velünk telefonon a +36 10 987 6543 telefonszámon!</p>
             </div>
-            <div>
-                <i class="fa-regular fa-clock"></i>
-                <h4>Átvételi és leadási idő</h4>
+            <div class="text-box">
+                <div class="condition">
+                    <i class="fa-regular fa-clock icon"></i>
+                    <h4>Átvételi és leadási idő</h4>
+                </div>
                 <p>A kerékpárokat a bérlés napján reggel 8 és 9 óra között lehet átvenni, a leadás napján 18 és 19 óra között lehet leadni.</p>
             </div>
-            <div>
-                <i class="fa-solid fa-exclamation"></i>
-                <h4>Felelősségvállalás</h4>
+            <div class="text-box">
+                <div class="condition">
+                    <i class="fa-solid fa-exclamation icon"></i>
+                    <h4>Felelősségvállalás</h4>
+                </div>
                 <p>A bérlő a kerékpárokat saját felelősségére, a KRESZ-nek és elektromos kerékpárok esetén az elektromos kerékpárokra vonatkozó jogszabályoknak megfelelően használja.</p>
             </div>
         </section>
@@ -110,8 +114,8 @@
             <h2>KERÉKPÁROK</h2>
             <div>
                 <h3>Elektromos kerékpárok</h3>
-                <ul>
-                    <li>Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
+                <ul class="property-list">
+                    <li> Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
                     <li>Erős, 250 W-os motor, végsebessége 30km/h</li>
                     <li>Könnyen kezelhető LCD kijelző</li>
                     <li>Defekttűrő, vastag gumiabroncs</li>
@@ -123,20 +127,25 @@
                     <li>Alacsony, könnyen átléphető, erős váz</li>
                 </ul>
             </div>
-            <h4>Ha még nem ültél elektromos kerékpáron, akkor itt az ideje, hogy kipróbáld!</h4>
-            <p>Miért érdemes kipróbálni az elektromos kerékpárt?</p>
-            <p>Az elektromos kerékpár előnyei:</p>
-            <ul>
-                <li>Az elektromos rásegítés megkönnyíti a meredek emelkedők megmászását.
+            <div class="e-bike">
+                <div class="e-bike-heading-box">
+                    <p>Még nem ültél elektromos kerékpáron?</p>
+                    <p>Akkor itt az ideje, hogy kipróbáld!</p>
+                </div>
+                <h4 class="e-bike-advantages">Miért érdemes kipróbálni az elektromos kerékpárt?</h4>
+                <p><strong>Az elektromos kerékpár előnyei:</strong></p>
+                <ul class="property-list">
+                    <li class="property-list-item">Az elektromos rásegítés megkönnyíti a meredek emelkedők megmászását.
                     Fontos hangsúlyozni, hogy az e-kerékpár nem megy magától, pedálozással hajtani kell és a motor csak segíti a pedálozást.
-                </li>
-                <li>Hosszabb távolságok megtételét teszi lehetővé nagyobb sebességgel, gyorsabban.</li>
-                <li>Kevesebb erőfeszítést igényel, ezáltal élvezetesebb, kényelmesebb lesz a kerékpározás.</li>
-                <li>A kevésbé fitt vagy idősebb emberek is bátran elindulhatnak vele egy hosszabb biciklitúrára.</li>
-            </ul>
+                    </li>
+                    <li class="property-list-item">Hosszabb távolságok megtételét teszi lehetővé nagyobb sebességgel, gyorsabban.</li>
+                    <li class="property-list-item">Kevesebb erőfeszítést igényel, ezáltal élvezetesebb, kényelmesebb lesz a kerékpározás.</li>
+                    <li class="property-list-item">A kevésbé fitt vagy idősebb emberek számára is ideális, bátran elindulhatnak vele egy hosszabb biciklitúrára.</li>
+                </ul>
+            </div>
             <div>
                 <h3>Hagyományos kerékpárok</h3>
-                <ul>
+                <ul class="property-list">
                     <li>7 fokozatú Shimano váltó</li>
                     <li>Teleszkópok</li>
                     <li>Hidraulikus tárcsafék</li>
@@ -146,8 +155,8 @@
                     <li>Alacsony, könnyen átléphető, erős váz</li>
                 </ul>
             </div>
-            <div>
-                <i class="fa-solid fa-plus"></i>
+            <div class="plus">
+                <i class="fa-solid fa-plus plus-icon"></i>
                 <p>Minden kerékpárhoz biztosítunk bukósisakot, láthatósági mellényt és lakatot.</p>
             </div>
         </section>
@@ -155,7 +164,7 @@
          <section id="kapcsolat" class="kapcsolat">
             <h2>Lépj velünk kapcsolatba!</h2>
             <!-- Űrlap -->
-             <form action="https://formspree.io/f/mrbgpaze" method="post">
+             <form action="https://formspree.io/f/mrbgpaze" method="post" class="kapcsolat-form">
                 <div class="form-elem">
                     <label for="nev" class="form-label">Név: </label>
                     <input type="text" name="nev" id="nev" class="form-input" required >
@@ -174,16 +183,6 @@
                 </div>
                 <input type="submit" value="Küldés" class="btn">
              </form>
-             <div class="main-contact">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>9999 Kisfalu, Lejtő utca 11.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>Defekt Dénes: +36 10 987 6543</p>
-                </div>
-            </div>
          </section>
          <!-- A táj -->
           <section id="taj" class="taj">
@@ -196,7 +195,7 @@
     <!-- Footer -->
     <footer>
         <p class="copyright">Copyright <span>&copy;</span> 2024 Fejér Tímea</p>
-        <a href=""><i class="fa-solid fa-circle-up"></i></a>
+        <a href=""><i class="fa-solid fa-circle-up arrow-up"></i></a>
     </footer>
 </body>
 </html>
