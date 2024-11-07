@@ -1,0 +1,304 @@
+/* Reset */
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Az egész oldalra érvényes stílusok */
+
+:root {
+    --white: white;
+    --black: black;
+    --light-blue: #7796CB;
+    --dark-blue: #023047;
+    --yellow: #FFC73B;
+    --orange: #FB8500;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding: 0 1rem 0 0;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--light-blue);
+}
+
+.logo {
+    font-size: 4.5rem;
+    color: var(--dark-blue);
+}
+
+.logo:hover {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* Hamburger menu */
+
+.nav-checkbox {
+    display: none;
+}
+
+.nav-checkbox__button {
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.nav-checkbox__line {
+    height: 0.3rem;
+    width: 90%;
+    background-color: var(--dark-blue);
+}
+
+.nav-links {
+    list-style-type: none;
+    width: 45vw;
+    height: 45%;
+    position: fixed;
+    right: -30rem;
+    visibility: hidden;
+    transition: right 0.4s, visibility 0.4s;
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1.9rem 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.nav-link:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.nav-checkbox:checked ~ .nav-links {
+    right: 0;
+    visibility: visible;
+}
+
+/* Main */
+
+main {
+    position: relative;
+    top: 15rem;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 3rem 0 1rem;
+}
+
+/* Főoldal */
+
+.fooldal {
+    padding: 0 2rem 2rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--black);
+    border: 2px solid var(--orange);
+    margin: 2rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 2px solid var(--dark-blue);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+img {
+    width: 80vw;
+    margin: 2rem 0;
+}
+
+/* Kölcsönzés */
+
+.kolcsonzes {
+    padding: 5rem 2rem;
+    background-color: var(--yellow);
+}
+
+.text-box {
+    margin: 0 0 2rem;
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+}
+
+/* Kerékpárok */
+
+.kerekparok {
+    padding: 3rem 2rem;
+}
+
+.property-list {
+    margin: 0 2rem 2rem;
+}
+
+.property-list-item {
+    margin: 0 0 1rem;
+}
+
+.e-bike {
+    margin: 4rem 0;
+}
+
+.e-bike-heading-box {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.e-bike-advantages {
+    margin: 1rem 0;
+} 
+
+.plus {
+    display: flex;
+    align-items: center;
+}
+
+.plus-icon {
+    padding: 0 1rem;
+    font-size: 3rem;
+}
+
+/* Kapcsolat */
+
+.kapcsolat {
+    padding: 3rem 2rem;
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kapcsolat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 80rem;
+}
+
+.form-elem {
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+
+.form-textarea {
+    height: 20vh;
+}
+
+.textarea-label {
+    height: 5rem;
+    vertical-align: top;
+}
+
+.form-label {
+    display: inline-block;
+    width: 14rem;
+    text-align: left;
+}
+
+.form-input {
+    width: 22rem;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0 0;
+    background-color: var(--dark-blue);
+}
+
+.copyright {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.arrow-up {
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+
+.arrow-up:hover {
+    color: var(--white);
+}
