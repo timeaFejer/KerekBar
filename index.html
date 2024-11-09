@@ -13,6 +13,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,22 +70,32 @@
             <div>
                 <h1>KerékBár</h1>
                 <p>Bérelj elektromos vagy hagyományos kerékpárt és fedezd fel a tájat kényelmesen!</p>
-                <a href="#kapcsolat" class="btn">Bicikli bérlés</a>
+                <a href="#kapcsolat" class="button">Bicikli bérlés</a>
             </div>
-            <img src="./assets/img/bicycle.jpg" alt="bicycle">
+            <img src="./assets/img/bicycle.jpg" class="bicycle-img" alt="bicycle">
         </section>
         <!-- Kölcsönzés -->
         <section id="kolcsonzes" class="kolcsonzes">
             <h2>KÖLCSÖNZÉS</h2>
             <h3>A kerékpár bérlés díja:</h3>
             <div class="text-box">
-                <p><strong>1 elektromos kerékpár</strong> bérleti díja <strong>1 napra 15.000 Ft</strong>, 2 napra 25.000 Ft. </p>
-                <p><strong>1 hagyományos kerékpár</strong> bérleti díja <strong>1 napra 10.000 Ft</strong>, 2 napra 18.000 Ft.</p>
+                <p>1 elektromos kerékpár bérleti díja:</p>
+                    <ul>
+                        <li class="fee-list-item">1 napra 15.000 Ft</li>
+                        <li class="fee-list-item">2 napra 25.000 Ft</li>
+                    </ul>
+                <p>1 hagyományos kerékpár bérleti díja:</p>
+                    <ul>
+                        <li class="fee-list-item">1 napra 10.000 Ft</li>
+                        <li class="fee-list-item">2 napra 18.000 Ft</li>
+                    </ul>
             </div>
             <p class="text-box">Fizetni lehet <strong>készpénzzel vagy bankkártyával</strong> a helyszínen.</p>
-            <p class="text-box"><strong>Kaució fizetendő</strong> a kerékpárok átvételekor:
-                Elektromos kerékpárok esetén 50.000 Ft kerékpáronként, hagyományos kerékpárok esetén 30.000 Ft kerékpáronként.
-            </p>
+            <p><strong>Kaució fizetendő</strong> a kerékpárok átvételekor:</p>
+                <ul>
+                    <li class="fee-list-item">Elektromos kerékpárok esetén 50.000 Ft kerékpáronként</li>
+                    <li class="fee-list-item">Hagyományos kerékpárok esetén 30.000 Ft kerékpáronként</li>
+                </ul>
             <p>Ha a kerékpárok sértetlen állapotban kerülnek leadásra, a bérlő visszakapja a kauciót.</p>
             <h3>Kölcsönzési feltételek</h3>
             <div class="text-box">
@@ -103,7 +114,7 @@
             </div>
             <div class="text-box">
                 <div class="condition">
-                    <i class="fa-solid fa-exclamation icon"></i>
+                    <i class="fa-solid fa-triangle-exclamation icon"></i>
                     <h4>Felelősségvállalás</h4>
                 </div>
                 <p>A bérlő a kerékpárokat saját felelősségére, a KRESZ-nek és elektromos kerékpárok esetén az elektromos kerékpárokra vonatkozó jogszabályoknak megfelelően használja.</p>
@@ -114,17 +125,20 @@
             <h2>KERÉKPÁROK</h2>
             <div>
                 <h3>Elektromos kerékpárok</h3>
+                <img src="./assets/img/e-bikes.jpg" class="bicycle-img" alt="E-bikes">
                 <ul class="property-list">
-                    <li> Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
+                    <li>Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
                     <li>Erős, 250 W-os motor, végsebessége 30km/h</li>
                     <li>Könnyen kezelhető LCD kijelző</li>
                     <li>Defekttűrő, vastag gumiabroncs</li>
+                    <li>Erős váz</li>
                     <li>7 fokozatú Shimano váltó</li>
                     <li>Teleszkópok</li>
                     <li>Hidraulikus tárcsafék</li>
                     <li>Kényelmes, puha ülés</li>
                     <li>Csomagtartó</li>
-                    <li>Alacsony, könnyen átléphető, erős váz</li>
+                    <li>Kitámasztó</li>
+                    <li>Sárvédő</li>
                 </ul>
             </div>
             <div class="e-bike">
@@ -134,25 +148,27 @@
                 </div>
                 <h4 class="e-bike-advantages">Miért érdemes kipróbálni az elektromos kerékpárt?</h4>
                 <p><strong>Az elektromos kerékpár előnyei:</strong></p>
-                <ul class="property-list">
-                    <li class="property-list-item">Az elektromos rásegítés megkönnyíti a meredek emelkedők megmászását.
+                <ul>
+                    <li class="advantage-list-item">Az elektromos rásegítés megkönnyíti a meredek emelkedők megmászását.
                     Fontos hangsúlyozni, hogy az e-kerékpár nem megy magától, pedálozással hajtani kell és a motor csak segíti a pedálozást.
                     </li>
-                    <li class="property-list-item">Hosszabb távolságok megtételét teszi lehetővé nagyobb sebességgel, gyorsabban.</li>
-                    <li class="property-list-item">Kevesebb erőfeszítést igényel, ezáltal élvezetesebb, kényelmesebb lesz a kerékpározás.</li>
-                    <li class="property-list-item">A kevésbé fitt vagy idősebb emberek számára is ideális, bátran elindulhatnak vele egy hosszabb biciklitúrára.</li>
+                    <li class="advantage-list-item">Hosszabb távolságok megtételét teszi lehetővé nagyobb sebességgel, gyorsabban.</li>
+                    <li class="advantage-list-item">Kevesebb erőfeszítést igényel, ezáltal élvezetesebb, kényelmesebb lesz a kerékpározás.</li>
+                    <li class="advantage-list-item">A kevésbé fitt vagy idősebb emberek számára is ideális, bátran elindulhatnak vele egy hosszabb biciklitúrára.</li>
                 </ul>
             </div>
             <div>
                 <h3>Hagyományos kerékpárok</h3>
+                <img src="./assets/img/normal-bicycle_cleanup.jpg" class="bicycle-img" alt="Normal bicycle">
                 <ul class="property-list">
+                    <li>Alacsony, könnyen átléphető, erős váz</li>
                     <li>7 fokozatú Shimano váltó</li>
-                    <li>Teleszkópok</li>
-                    <li>Hidraulikus tárcsafék</li>
+                    <li>V-fék</li>
                     <li>Defekttűrő gumiabroncs</li>
                     <li>Kényelmes, puha ülés</li>
                     <li>Csomagtartó</li>
-                    <li>Alacsony, könnyen átléphető, erős váz</li>
+                    <li>Kitámasztó</li>
+                    <li>Sárvédő</li>
                 </ul>
             </div>
             <div class="plus">
@@ -181,7 +197,7 @@
                     <label for="uzenet" class="form-label  textarea-label">Üzenet: </label>
                     <textarea name="uzenet" id="uzenet" class="form-input form-textarea" required></textarea>
                 </div>
-                <input type="submit" value="Küldés" class="btn">
+                <input type="submit" value="Küldés" class="button">
              </form>
          </section>
          <!-- A táj -->
@@ -189,13 +205,54 @@
             <h2>A táj</h2>
             <h3>Fedezd fel ezt a varázslatos tájat két keréken!</h3>
             <p>Változatos, kitáblázott kerékpárutak várnak!</p>
+
+            <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/autumn-forest.jpg" class="d-block w-100 carousel-img" alt="Autumn forest">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/sunny-bike-road_cleanup.jpg" class="d-block w-100 carousel-img" alt="Sunny bike road">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/forest-bike-road_cleanup.jpg" class="d-block w-100 carousel-img" alt="Forest bike road">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/bicycle-road.jpg" class="d-block w-100 carousel-img" alt="Bicycle road by the river">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+              <div>
+                <p>Velünk ki lesz a 2 kereked!</p>
+                <a href="#kapcsolat" class="button">Bicikli bérlés</a>
+              </div>
           </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p class="copyright">Copyright <span>&copy;</span> 2024 Fejér Tímea</p>
+        <div class="copyright">
+            <p>Copyright <span>&copy;</span> 2024 Fejér Tímea</p>
+            <p>Made with <i class="fa-solid fa-code" title="code"></i>  &  <i class="fa-solid fa-mug-hot" title="tea"></i></p>
+        </div>
         <a href=""><i class="fa-solid fa-circle-up arrow-up"></i></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
