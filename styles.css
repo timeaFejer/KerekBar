@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
@@ -52,13 +52,14 @@ header {
     justify-content: center;
     background-color: var(--dark-blue);
     color: var(--white);
-    padding: 1rem 0;
-    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
 }
 
 .contact {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -68,12 +69,12 @@ header {
 .header-menu {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: var(--light-blue);
 }
 
 .logo {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: var(--dark-blue);
 }
 
@@ -95,8 +96,7 @@ header {
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    margin-right: 1rem;
-    margin-top: 2rem;
+    margin: 1.5rem 1rem 0 0;
 }
 
 .nav-checkbox__line {
@@ -107,8 +107,8 @@ header {
 
 .nav-links {
     list-style-type: none;
-    width: 45vw;
-    height: 45%;
+    width: 50vw;
+    height: 45vh;
     position: fixed;
     right: -30rem;
     visibility: hidden;
@@ -116,7 +116,7 @@ header {
     background-color: var(--dark-blue);
     text-align: center;
     padding: 1rem 0;
-    margin: 1.9rem 0;
+    margin: 1.5rem 0;
 }
 
 .nav-link {
@@ -124,8 +124,8 @@ header {
     text-transform: uppercase;
     color: var(--white);
     display: block;
-    padding: 1rem 0;
-    font-size: 1.8rem;
+    padding: 0.7rem 0;
+    font-size: 1.7rem;
 }
 
 .nav-link:hover {
@@ -142,7 +142,7 @@ header {
 
 main {
     position: relative;
-    top: 15rem;
+    top: 13rem;
 }
 
 h1, h2, h3, h4 {
@@ -152,23 +152,21 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.5rem;
-    padding: 2rem 0 0;
+    margin: 0 0 1rem;
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    margin: 2rem 0;
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
 }
 
 h4 {
     font-size: 1.8rem;
-}
-
-h2, h3 {
-    margin: 3rem 0 2rem;
 }
 
 /* Főoldal */
@@ -180,12 +178,12 @@ h2, h3 {
 
 .button {
     display: inline-block;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1rem;
     text-decoration: none;
     background-color: var(--orange);
     color: var(--black);
     border: 2px solid var(--orange);
-    margin: 2rem;
+    margin: 1.5rem;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     letter-spacing: 0.1rem;
     cursor: pointer;
@@ -202,23 +200,18 @@ h2, h3 {
 .bicycle-img {
     width: 80vw;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 /* Kölcsönzés */
 
 .kolcsonzes {
-    padding: 5rem 2rem;
+    padding: 2rem;
     background-color: var(--yellow);
-}
-
-.fee-list-item {
-    margin: 0 1rem;
 }
 
 .text-box {
     margin: 2rem 0;
-    padding: 0;
 }
 
 .condition {
@@ -228,11 +221,15 @@ h2, h3 {
 /* Kerékpárok */
 
 .kerekparok {
-    margin: 5rem 0;
+    padding: 3rem 0;
+}
+
+.bike-type-title {
+    margin: 2rem 0;
 }
 
 .property-list {
-    margin: 0 4rem 2rem;
+    margin: 2rem 3rem;
 }
 
 .advantage-list-item {
@@ -256,7 +253,6 @@ h2, h3 {
 .plus {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
 }
 
 .plus-icon {
@@ -267,7 +263,7 @@ h2, h3 {
 /* Kapcsolat */
 
 .kapcsolat {
-    padding: 3rem 2rem;
+    padding: 2rem;
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
@@ -281,12 +277,10 @@ h2, h3 {
     align-items: center;
     justify-content: center;
     width: 85%;
-    max-width: 80rem;
 }
 
 .form-elem {
     margin: 1rem auto;
-    display: flex;
 }
 
 .form-textarea {
@@ -294,25 +288,22 @@ h2, h3 {
 }
 
 .textarea-label {
-    height: 5rem;
     vertical-align: top;
 }
 
 .form-label {
-    display: inline-block;
-    width: 14rem;
     text-align: left;
     font-size: 1.8rem;
 }
 
 .form-input {
-    width: 22rem;
+    width: 100%;
 }
 
 /* A táj */
 
 .taj {
-    padding: 3rem 2rem;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -324,7 +315,7 @@ h2, h3 {
 }
 
 .carousel-img {
-    height: 300px;
+    height: 200px;
 }
 
 /* Footer */
