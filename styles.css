@@ -108,7 +108,7 @@ header {
 .nav-links {
     list-style-type: none;
     width: 50vw;
-    height: 45vh;
+    height: 38vh;
     position: fixed;
     right: -30rem;
     visibility: hidden;
@@ -125,7 +125,7 @@ header {
     color: var(--white);
     display: block;
     padding: 0.7rem 0;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .nav-link:hover {
@@ -162,7 +162,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin: 2rem 0 1rem;
+    margin: 3rem 0 2rem;
 }
 
 h4 {
@@ -172,8 +172,10 @@ h4 {
 /* Főoldal */
 
 .fooldal {
-    padding: 0 2rem 2rem;
+    padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
@@ -183,7 +185,7 @@ h4 {
     background-color: var(--orange);
     color: var(--black);
     border: 2px solid var(--orange);
-    margin: 1.5rem;
+    margin: 2rem;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     letter-spacing: 0.1rem;
     cursor: pointer;
@@ -198,7 +200,7 @@ h4 {
 }
 
 .bicycle-img {
-    width: 80vw;
+    width: 85vw;
     display: block;
     margin: 1rem auto;
 }
@@ -210,8 +212,22 @@ h4 {
     background-color: var(--yellow);
 }
 
+.bike-fee {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.bike-fee-group {
+    text-align: center;
+}
+
+.bike-fee-list {
+    display: inline-block;
+}
+
 .text-box {
-    margin: 2rem 0;
+    margin: 1rem 0 2rem;
 }
 
 .condition {
@@ -221,15 +237,18 @@ h4 {
 /* Kerékpárok */
 
 .kerekparok {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
 }
 
-.bike-type-title {
-    margin: 2rem 0;
+.bike-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 .property-list {
-    margin: 2rem 3rem;
+    margin: 1rem;
 }
 
 .advantage-list-item {
@@ -253,51 +272,53 @@ h4 {
 .plus {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto 2rem;
 }
 
 .plus-icon {
-    padding: 0 2rem;
+    padding: 0 2rem 0 0;
     font-size: 3rem;
 }
 
 /* Kapcsolat */
 
 .kapcsolat {
-    padding: 2rem;
+    padding: 2rem 0 4rem;
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid var(--dark-blue);
 }
 
 .kapcsolat-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
 }
 
 .form-elem {
-    margin: 1rem auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-textarea {
-    height: 20vh;
-}
-
-.textarea-label {
-    vertical-align: top;
+    height: 25vh;
 }
 
 .form-label {
-    text-align: left;
     font-size: 1.8rem;
 }
 
 .form-input {
-    width: 100%;
+    width: 23rem;
+}
+
+.form-button {
+    width: 10rem;
+    margin: 1.5rem auto;
 }
 
 /* A táj */
@@ -311,11 +332,7 @@ h4 {
 
 .carousel {
     width: 100%;
-    margin: 2rem auto;
-}
-
-.carousel-img {
-    height: 200px;
+    margin: 2rem auto 3rem;
 }
 
 /* Footer */
@@ -343,4 +360,223 @@ footer {
 
 .arrow-up:hover {
     color: var(--white);
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 576px) {
+     body {
+        font-size: 1.8rem;
+     } 
+
+    /* Hamburger menu*/
+    .nav-links {
+        width: 40%;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    /* Főoldal*/
+    .bicycle-img {
+        width: 70vw;
+    }
+
+    /* Kölcsönzés */
+    .kolcsonzes {
+        padding: 2rem 3rem;
+    }
+
+    /* Kapcsolat */
+    .form-elem {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-label {
+        width: 15rem;
+    }
+
+    .textarea-label {
+        align-self: flex-start;
+    } 
+
+    /* Carousel */
+    .carousel {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Header */
+    .header-contact {
+       flex-direction: row;
+       justify-content: space-around;
+       font-size: 1.5rem;
+    }
+
+    .header-nav {
+        display: flex;
+        padding-top: 0.5rem;
+    }
+
+    /* Hamburger menu*/
+    .nav-checkbox__button {
+        display: none;
+    }
+
+    .nav-links {
+        visibility: visible;
+        background-color: var(--light-blue);
+        display: flex;
+        position: relative;
+        right: 0;
+        height: 1vh;
+        width: 80vw;
+        margin: 0;
+        justify-content: flex-end;   
+    }
+
+    .nav-link {
+        color: var(--dark-blue);
+        text-transform: capitalize;
+        padding: 0 1.5rem;
+    }
+
+    .nav-link:hover {
+        color: var(--dark-blue);
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+    }
+
+    /* Főoldal */
+    .call {
+        font-size: 2rem;
+    }
+
+    .bicycle-img {
+        width: 60vw;
+    }
+
+    /* Kölcsönzés */
+    .kolcsonzes {
+        padding: 2rem 4rem;
+    }
+
+    /* Kerékpárok*/
+    .property-list {
+        padding: 0 5rem;
+    }
+
+    .e-bike {
+        padding: 2rem 4rem;
+    }
+
+    .plus {
+        padding: 2rem 4rem;
+    }
+
+    /* Kapcsolat */
+    .kapcsolat {
+        margin: 0 8rem;
+    }
+
+    .form-input {
+        width: 30rem;
+    }
+
+    .form-textarea {
+        height: 30vh;
+    }
+
+    /* Carousel*/
+    .carousel {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 2rem;
+    }
+
+    /* Header */
+    .header-contact {
+        font-size: 1.7rem;
+    }
+
+    .nav-link {
+        padding: 0 2.5rem;
+    }
+
+    /* Main */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        letter-spacing: 0.1rem;
+        margin: 4rem 0 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+    
+    /* Főoldal */
+    .fooldal {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .fooldal-text {
+        padding: 0 2rem;
+    }
+
+    .call {
+        font-size: 2.2rem;
+    }
+
+    .bicycle-img {
+        width: 45vw;
+        margin: 1rem;
+    }
+
+    /* Kölcsönzés */
+    .bike-fee {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .text-box {
+        margin: 2rem 0 3rem;
+    }
+    
+    /* Kerékpárok*/
+    .bike-type {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem 2rem;
+    }
+
+    /* Kapcsolat */
+    .kapcsolat {
+        margin: 3rem 15rem;
+    } 
+    
+    /* Carousel */
+    .carousel {
+        width: 60%;
+    }
 }
