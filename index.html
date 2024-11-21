@@ -41,7 +41,7 @@
             <!-- Logo -->
             <a href="#fooldal" class="logo"><i class="bi bi-bicycle"></i></a>
             <!-- Nav -->
-            <nav>
+            <nav class="header-nav">
                 <!-- Hamburger menu -->
                 <input type="checkbox" name="checkbox" id="nav-checkbox" class="nav-checkbox">
                 <label for="nav-checkbox">
@@ -67,9 +67,9 @@
     <main>
         <!-- Főoldal -->
         <section id="fooldal" class="fooldal">
-            <div>
+            <div class="fooldal-text">
                 <h1>KerékBár</h1>
-                <p>Bérelj elektromos vagy hagyományos kerékpárt és fedezd fel a tájat kényelmesen!</p>
+                <p class="call">Bérelj elektromos vagy hagyományos kerékpárt és fedezd fel a tájat kényelmesen!</p>
                 <a href="#kapcsolat" class="button">Bicikli bérlés</a>
             </div>
             <img src="./assets/img/bicycle.jpg" class="bicycle-img" alt="bicycle">
@@ -78,17 +78,21 @@
         <section id="kolcsonzes" class="kolcsonzes">
             <h2>KÖLCSÖNZÉS</h2>
             <h3>A kerékpár bérlés díja:</h3>
-            <div class="text-box">
-                <p>1 elektromos kerékpár bérleti díja:</p>
-                    <ul>
+            <div class="bike-fee">
+                <div class="bike-fee-group">
+                    <p><strong>1 elektromos kerékpár</strong> bérleti díja:</p>
+                    <ul class="bike-fee-list">
                         <li>1 napra 15.000 Ft</li>
                         <li>2 napra 25.000 Ft</li>
                     </ul>
-                <p>1 hagyományos kerékpár bérleti díja:</p>
-                    <ul>
+                </div>
+                <div class="bike-fee-group">
+                    <p><strong>1 hagyományos kerékpár</strong> bérleti díja:</p>
+                    <ul class="bike-fee-list">
                         <li>1 napra 10.000 Ft</li>
                         <li>2 napra 18.000 Ft</li>
                     </ul>
+                </div>
             </div>
             <p class="text-box">Fizetni lehet <strong>készpénzzel vagy bankkártyával</strong> a helyszínen.</p>
             <p><strong>Kaució fizetendő</strong> a kerékpárok átvételekor:</p>
@@ -123,24 +127,30 @@
         <!-- Kerékpárok -->
         <section id="kerekparok" class="kerekparok">
             <h2>KERÉKPÁROK</h2>
-            <div>
-                <h3 class="bike-type-title">Elektromos kerékpárok</h3>
-                <img src="./assets/img/e-bikes.jpg" class="bicycle-img" alt="E-bikes">
-                <ul class="property-list">
-                    <li>Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
-                    <li>Erős, 250 W-os motor, végsebessége 30km/h</li>
-                    <li>Könnyen kezelhető LCD kijelző</li>
-                    <li>Defekttűrő, vastag gumiabroncs</li>
-                    <li>Erős váz</li>
-                    <li>7 fokozatú Shimano váltó</li>
-                    <li>Teleszkópok</li>
-                    <li>Hidraulikus tárcsafék</li>
-                    <li>Kényelmes, puha ülés</li>
-                    <li>Csomagtartó</li>
-                    <li>Kitámasztó</li>
-                    <li>Sárvédő</li>
-                </ul>
-            </div>
+                <div>
+                    <h3>Elektromos kerékpárok</h3>
+                    <div class="bike-type">
+                        <img src="./assets/img/e-bikes.jpg" class="bicycle-img bike-type-img" alt="E-bikes">
+                        <ul class="property-list">
+                            <li>Nagy teljesítményű akkumulátor: 1 feltöltéssel megtehető 100 km távolság</li>
+                            <li>Erős, 250 W-os motor, végsebessége 30km/h</li>
+                            <li>Könnyen kezelhető LCD kijelző</li>
+                            <li>Defekttűrő, vastag gumiabroncs</li>
+                            <li>Erős váz</li>
+                            <li>7 fokozatú Shimano váltó</li>
+                            <li>Teleszkópok</li>
+                            <li>Hidraulikus tárcsafék</li>
+                            <li>Kényelmes, puha ülés</li>
+                            <li>Csomagtartó</li>
+                            <li>Kitámasztó</li>
+                            <li>Sárvédő</li>
+                        </ul>
+                    </div>
+                    <div class="plus">
+                        <i class="fa-solid fa-plus plus-icon"></i>
+                        <p>Minden kerékpárhoz biztosítunk bukósisakot, láthatósági mellényt és lakatot.</p>
+                    </div>
+                </div>
             <div class="e-bike">
                 <div class="e-bike-heading-box">
                     <p>Még nem ültél elektromos kerékpáron?</p>
@@ -158,18 +168,20 @@
                 </ul>
             </div>
             <div>
-                <h3 class="bike-type-title">Hagyományos kerékpárok</h3>
-                <img src="./assets/img/normal-bicycle_cleanup.jpg" class="bicycle-img" alt="Normal bicycle">
-                <ul class="property-list">
-                    <li>Alacsony, könnyen átléphető, erős váz</li>
-                    <li>7 fokozatú Shimano váltó</li>
-                    <li>V-fék</li>
-                    <li>Defekttűrő gumiabroncs</li>
-                    <li>Kényelmes, puha ülés</li>
-                    <li>Csomagtartó</li>
-                    <li>Kitámasztó</li>
-                    <li>Sárvédő</li>
-                </ul>
+                <h3>Hagyományos kerékpárok</h3>
+                <div class="bike-type">
+                    <img src="./assets/img/normal-bicycle_cleanup.jpg" class="bicycle-img bike-type-img" alt="Normal bicycle">
+                    <ul class="property-list">
+                        <li>Alacsony, könnyen átléphető, erős váz</li>
+                        <li>7 fokozatú Shimano váltó</li>
+                        <li>V-fék</li>
+                        <li>Defekttűrő gumiabroncs</li>
+                        <li>Kényelmes, puha ülés</li>
+                        <li>Csomagtartó</li>
+                        <li>Kitámasztó</li>
+                        <li>Sárvédő</li>
+                    </ul>
+                </div>
             </div>
             <div class="plus">
                 <i class="fa-solid fa-plus plus-icon"></i>
@@ -197,7 +209,7 @@
                     <label for="uzenet" class="form-label  textarea-label">Üzenet: </label>
                     <textarea name="uzenet" id="uzenet" class="form-input form-textarea" required></textarea>
                 </div>
-                <input type="submit" value="Küldés" class="button">
+                <input type="submit" value="Küldés" class="button  form-button">
              </form>
          </section>
          <!-- A táj -->
